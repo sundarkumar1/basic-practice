@@ -1,0 +1,45 @@
+what is modal:modal is a dialogbox or popup window
+1.focus on load
+2.links and buttons are tabable
+3.tabbing
+4.esc/enter or clicking
+5.focus on close
+*first when a modal is loaded the focus should go to the first actionable element within the modal and a screen reader should read the modal header
+
+drag and drop
+tab=progress through the items
+shift+tab=moving backwards
+space=select an item
+shift+space=select more than one elemeent
+esc=deselect
+ctrl+m=move the focus on out side the current statement
+enter=drop the selected items 
+
+drop-effect=dragging and dropin the elements
+
+aria-live settings:
+1.aria-live="off" // screan reader not read
+2.aria-live="polite" //any region that receives important updates should use this attribute
+3.aria-live="assertive"  // it is used when critical or time sensitive updates aredisplayed//error messages,success mesages //role="alert"
+
+html tab web accessible: non sighted user use keyboard only.
+used: tab,enter,screen reader(.tabsize:3,.position:1.Define relation ship,Update aria attributes)
+posinset:what is the curent position.
+The aria-posinset attribute defines an element's number or position in the current set of listitems or treeitems when not all items are present in the DOM.
+setsize=3:3 tabs
+ 
+Tabbing always work for the elements which are actionable such as text boxes,drop down,radio,check boxes and links
+
+menu
+_______
+vertical sliding manual are commonly used for
+|
+|
+|(vertical): cell phones and tablets
+|
+|
+used in animations,sliding transition
+keyword access : user must be ables to access the hamburger menu and menu items using keyboard keys only
+Total otems : How many items are available and what's the current position
+Navigate Key : close the menu
+0 axe errors

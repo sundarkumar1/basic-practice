@@ -1,0 +1,29 @@
+Angular
+------------------------------
+. Installing Angular CLI
+. Create a new empty workspace using CLI
+. Create a workspace with default app
+. Workspace walkthrough
+
+
+. Installing Angular CLI :
+-------------------------------------------------------
+open comandpromt
+.npm i @angular/cli -g(globally)
+
+. ng --version (check angular version)
+
+
+. Create a new empty workspace using CLI.
+-------------------------------------------------------------------------------------
+you can create multiple projects within the workspace.
+
+. you can create an empty workspace and then add projects later.
+or . you can create an workspace with default application.
+
+
+ng new name --createApplication=false(empty workspace)
+
+ 
+universal selector
+

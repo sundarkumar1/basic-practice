@@ -1,0 +1,13 @@
+                                                          Type Script
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Installing and creating First Typescript Program : 
+----------------------------------------------------------------------------------------------------
+* Install node.
+* Use latest version of Nodejs.
+* `npm init` to create a package.json
+* Install Typescript `npm i typescript`
+* Initialize Typescript
+* `tsc --init` (tsconfig.json) // change the version and then you compile your javascript es2016 and es2015 the file
+package.json:
+----------------------------------
+package.json file will keep tracking of all the packages   

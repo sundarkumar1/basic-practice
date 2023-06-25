@@ -1,0 +1,203 @@
+today i will explain what ever i study in past few weeks
+html:
+----------------
+An HTML layout is a blueprint used to arrange web pages in a well-defined manner. 
+It is easy to navigate, simple to understand and uses HTML tags to customize web design elements. 
+Crucial for any website, an HTML layout that uses the correct format will easily improve a website’s appearance. 
+Additionally, because HTML layouts are typically responsive by default, they will also be properly formatted for mobile devices. 
+
+*header article section these are sematic elements it can be used to define different parts of a webpage.
+<header>:This defines a header for a web page
+<nav>: This defines a container for navigation links
+<section>: This defines a section in a web page
+<article>: This is the primary element that contains information about the web page
+<aside>: The <aside> content is often placed as a sidebar in a document
+<footer>: This defines a footer for a document or a section
+<details>: This is used to define additional details
+<summary>: This defines a heading for the <details> element
+
+
+
+The <!DOCTYPE html> It is an "information" to the browser about what document type to expect.
+The <html> element is the root element of an HTML page
+The <head> element contains meta information about the HTML page
+The <title> element specifies a title for the HTML page (which is shown in the browser's title bar or in the page's tab)
+The <body> element defines the document's body, and is a container for all the visible contents, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
+The <h1> element defines a large heading
+The <p> element defines a paragraph.
+
+
+component directive is also a directive with a template
+@component decorator is actually a @directivee decorator extends with a template-oriented features
+
+structural directives iterates or conditionally manipulates DOM elements.
+*ngfor is used to iterate and print list in html page
+*ngIf is used to conditionally display on html dom element
+
+
+Attribute directive  alter the behaviour of an existing html element.
+ngmoduel implements two way data binding.
+
+
+
+custom directive : you can create your own directive using @directive decorator ng generate directive myDir.
+
+basically pipes are used for the databinding when we are binding the data if you want to change the existing data form we can use the pipes
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+* as you can see here we have a to-do list now you can add new to-do's.
+* like here sundar right so here we go we've got a new to-do list .
+* we can take todo list off
+* we can remove them once there're done as well or remove from when they're not done.
+* if you just want to get rid of them
+* you can click the button Add Todo add new todos.
+* so lets go the code
+
+tsconfig.specs.json : used by all the unit test files named as spec.ts compile spec.ts files 
+tsconfig.app.json  : write application code 
+Angular by default unit testing writing all test cases in jasmine and using karma to run. 
+Angular.json : information in your  workspace 
+Node module : Which all the packages installed its available in node module. 
+Polyfills : it will always add extra lines of code or bundle to your final bundle . Code not supported some browser used internally by angular. 
+Main.ts : starting point , execution start 
+
+Mono repo : 
+------------------------------- 
+. Create and maintain multiple apps in same repo 
+. Use libraries within the project. 
+. Deply multiple apps/libs from same repo. 
+. Easy and share code with in the project   
+
+ Any components, directives and pipes needs to be registered by declarations. 
+(@) decorators it modifies the behaviour of your class 
+Components means views which will be actually rendered to the end user   
+In angular we need one root module (app.module), one root component (app.component) it will loaded on index.html 
+ng serve command runs in a watch mode it keep and watch all the changes which you make in your file just on your file system. 
+
+
+goto cmd install angular cli
+cd out of this directory
+after installed angular used ng new name -app which gonna allows us to create a new angular application.
+and its going to ask us what we want to use again select css  
+* ng serve --open for it to open directly in your browser
+* open visual studio code see  here different folders is there now the main ones is src file in src file you want tto only look into styles.
+* style.css we can use throught the whole project. 
+* in this style you can add all your global styles to this style sheet and they will implement across thee whole app you can also add in component .css.
+* index.html basically our html this is where everything will be rendered. we don.t need to touch this file other than remaining.
+* it's called the app-root now this is like angular injects it's code intoo the dom.
+*so whats going to do its going to anything we built inside of our app mosule here its going to be put inside the appp root.
+* app module ts so this is where everything gets declared .
+* this is declarations which are our components all our components will go in here means we are able to use our components where we need to in our app.*
+
+*module.ts
+*we have imports here you import all your modules.
+* when we create new component module .ts stuff they'll be automatically injected .
+
+
+aap.html
+* create a header and in this header have an h1 tag that says Todo List.
+
+creatre a todos component.
+selector so this is how we use the component in other components.
+* after create a new coponent import that component in app.module.ts
+
+todos.html
+* create a class todos.
+* and create a another class todo singular.
+* and cretae a new class id its just going to be the index we,ll put as 0 for now
+* and icreate an content
+* create button class of delete which will say remove while delete todo from the app.
+* we're going to need to loop through a bunch of todos
+
+
+todos.ts
+* add a new todo
+q
+
+
+model:
+export class todo and there are parameters content is going to be a string (what the content of the todo is ) and completedis going to be a boolean (true or false)
+import this component in todos.ts.
+
+todo.ts:
+now create an array of todos and empty array
+ngoninit add some stuff 
+we have to use this keyword to get variables from inside of our classes.
+we need to now pass through content and completed into our array.
+
+todos.html
+
+now calling *ngfor , then we're going to get the index by says let i= index.
+* class = id we need to go in here we need to pass through i here using template strings.
+*class="content" this onee we need to sat todo content
+
+todos.ts:
+* now we need to stat actually coming up with methods. methods are just functions inside of a class.
+
+todos.html:
+its completed we're going to give the class of done else we're going to pass through an empty string.
+
+
+when we click this it will strike it through 
+we need to create a new method toogle done().
+this. here actually have to pass  through the id or the index we are going for this
+this.todos.map((v, i)) loop through this we are just going to  .
+lets loops if our index is same to the index we pass through we going to say v.completed= -------. 
+looping through all our todos and chcking if our id matchezs the id part.
+we call this in todo.html
+
+todo.htmlL.
+class content toogleDone.
+
+
+for adding:
+input values and use an ngmodule  this is 2 way data bindig in angular and assign a variable or data attribute
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
